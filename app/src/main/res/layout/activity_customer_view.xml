@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.com.nggirl.bigimagetestapp.customertext.CustomerViewActivity">
+
+    <cn.com.nggirl.bigimagetestapp.customertext.CustomerTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:color="#ffff00"
+        app:size="17sp"
+        app:text="250" />
+
+    <cn.com.nggirl.bigimagetestapp.customertext.CustomerImageView
+        android:id="@+id/customer_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:color="#000000"
+        app:image="@mipmap/ic_launcher"
+        app:imageScaleType="center"
+        app:size="17sp"
+        app:text="hello world!" />
+
+    <cn.com.nggirl.bigimagetestapp.customertext.CustomerImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:color="#000000"
+        app:image="@mipmap/ic_launcher"
+        app:imageScaleType="center"
+        app:size="17sp"
+        app:text="hello world world world!" />
+
+    <cn.com.nggirl.bigimagetestapp.customertext.CustomerImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:color="#000000"
+        app:image="@mipmap/ic_launcher"
+        app:imageScaleType="fitXY"
+        app:size="17sp"
+        app:text="hello world!" />
+
+    <cn.com.nggirl.bigimagetestapp.customertext.CustomerProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+</LinearLayout>
