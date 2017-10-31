@@ -19,7 +19,8 @@
         <activity android:name=".bigimage.BigImageActivity" />
         <activity android:name=".customer.CounterViewActivity" />
         <activity android:name=".mylistview.CustomerListViewActivity" />
-        <activity android:name=".customertext.CustomerViewActivity"></activity>
+        <activity android:name=".customertext.CustomerViewActivity" />
+        <activity android:name=".canvas.CanvasActivity"></activity>
     </application>
 
 </manifest>
