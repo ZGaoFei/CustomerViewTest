@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import cn.com.nggirl.bigimagetestapp.bigimage.BigImageActivity;
 import cn.com.nggirl.bigimagetestapp.canvas.CanvasActivity;
+import cn.com.nggirl.bigimagetestapp.canvas.CanvasTestActivity;
 import cn.com.nggirl.bigimagetestapp.customer.CounterViewActivity;
 import cn.com.nggirl.bigimagetestapp.customertext.CustomerViewActivity;
 import cn.com.nggirl.bigimagetestapp.mylistview.CustomerListViewActivity;
@@ -59,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CanvasActivity.start(MainActivity.this);
+            }
+        });
+
+        Button btCanvasTest = (Button) findViewById(R.id.bt_skip_canvas_test);
+        btCanvasTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CanvasTestActivity.start(MainActivity.this);
             }
         });
 

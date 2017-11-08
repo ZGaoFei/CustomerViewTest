@@ -6,34 +6,53 @@
     android:orientation="vertical"
     tools:context="cn.com.nggirl.bigimagetestapp.MainActivity">
 
-    <Button
-        android:id="@+id/bt_skip_one"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="big image page" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/bt_skip_two"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="counter image page" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/bt_skip_three"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="counter list view page" />
+            <Button
+                android:id="@+id/bt_skip_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="big image page" />
 
-    <Button
-        android:id="@+id/bt_skip_four"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="counter customer view page" />
+            <Button
+                android:id="@+id/bt_skip_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="counter image page" />
 
-    <Button
-        android:id="@+id/bt_skip_canvas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="canvas test" />
+            <Button
+                android:id="@+id/bt_skip_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="counter list view page" />
+
+            <Button
+                android:id="@+id/bt_skip_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="counter customer view page" />
+
+            <Button
+                android:id="@+id/bt_skip_canvas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="canvas" />
+
+            <Button
+                android:id="@+id/bt_skip_canvas_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="canvas test" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
 
 </LinearLayout>
