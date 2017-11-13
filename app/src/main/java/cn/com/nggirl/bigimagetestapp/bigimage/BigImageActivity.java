@@ -5,17 +5,25 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.Environment;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ImageView;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.InputStream;
 
 import cn.com.nggirl.bigimagetestapp.R;
 
+import static android.os.Environment.getExternalStorageDirectory;
+
 public class BigImageActivity extends AppCompatActivity {
-    private static final String imageUrl = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separatorChar + "Pictures/image.jpg";
+    private static final String imageUrl = getExternalStorageDirectory().getAbsolutePath() + File.separatorChar + "Pictures/image.jpg";
+
+    private ImageView imageView;
 
     public static void start(Context context) {
         context.startActivity(new Intent(context, BigImageActivity.class));
@@ -39,8 +47,20 @@ public class BigImageActivity extends AppCompatActivity {
 //        image.setImageResource(R.drawable.image);
 
         // 压缩后
-        ImageView image2 = (ImageView) findViewById(R.id.iv_big_image2);
-        image2.setImageBitmap(three(500, 500));
+        imageView = (ImageView) findViewById(R.id.iv_big_image2);
+        clipImage();
+
+//        Bitmap three = ImageUtils.three(this, R.drawable.image, 600, 400);
+//        Log.e("==111==", "====");
+//        InputStream inputStream = ImageUtils.compressImage2(three);
+//        three.recycle();
+//        Log.e("==222==", "====");
+//        String imagesss = ImageUtils.writeResponseBodyToDisk(inputStream, "imagesss");
+//        Log.e("====", "====" +imagesss);
+//        Bitmap bitmap = BitmapFactory.decodeFile(imagesss);
+//        Log.e("====", "====" + (bitmap == null));
+//        image2.setImageBitmap(bitmap);
+
     }
 
     private void testMemory() {
@@ -116,9 +136,78 @@ public class BigImageActivity extends AppCompatActivity {
     private Bitmap three(int width, int height) {
         BitmapFactory.Options options = option();
         options.inSampleSize = two(options, width, height);
-        Log.e("====", "=====" + options.inSampleSize);
+        Log.e("==three==", "===inSampleSize==" + options.inSampleSize);
 
         options.inJustDecodeBounds = false;
         return BitmapFactory.decodeResource(getResources(), R.drawable.image, options);
     }
+
+    /**
+     * 质量压缩方法
+     *
+     * @param image
+     * @return
+     */
+    public Bitmap compressImage(Bitmap image) {
+        Log.e("=====", "=====");
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, baos);// 质量压缩方法，这里100表示不压缩，把压缩后的数据存放到baos中
+        int options = 100;
+        while (baos.toByteArray().length / 1024 > 100) { // 循环判断如果压缩后图片是否大于100kb,大于继续压缩
+            baos.reset();// 重置baos即清空baos
+            image.compress(Bitmap.CompressFormat.JPEG, options, baos);// 这里压缩options%，把压缩后的数据存放到baos中
+            options -= 10;// 每次都减少10
+        }
+
+        Log.e("====", "====" + (baos.toByteArray().length / 1024));
+        ByteArrayInputStream isBm = new ByteArrayInputStream(baos.toByteArray());// 把压缩后的数据baos存放到ByteArrayInputStream中
+        return BitmapFactory.decodeStream(isBm, null, null);
+    }
+
+
+    private ClipHandler clipHandler = new ClipHandler(new ClipImageListener() {
+        @Override
+        public void onSuccess(Message msg) {
+            String url = (String) msg.obj;
+            Log.e("==onSuccess==", "==url==" + url);
+            Bitmap bitmap = BitmapFactory.decodeFile(url);
+            imageView.setImageBitmap(bitmap);
+        }
+    });
+
+    private void clipImage() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Bitmap three = three(600, 400);
+                InputStream inputStream = ImageUtils.compressImage2(three);
+                Log.e("==222==", "====");
+                String imagesss = ImageUtils.writeResponseBodyToDisk(inputStream, "imagesss");
+                Log.e("==clipImage==", "==imagesss==" + imagesss);
+
+                Message obtain = Message.obtain();
+                obtain.obj = imagesss;
+                clipHandler.sendMessage(obtain);
+            }
+        }).start();
+    }
+
+    private static class ClipHandler extends Handler {
+        ClipImageListener listener;
+
+        ClipHandler(ClipImageListener listener) {
+            this.listener = listener;
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            listener.onSuccess(msg);
+        }
+    }
+
+    interface ClipImageListener{
+        void onSuccess(Message msg);
+    }
+
 }

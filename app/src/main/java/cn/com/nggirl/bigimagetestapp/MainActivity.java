@@ -8,6 +8,7 @@ import android.widget.Button;
 import cn.com.nggirl.bigimagetestapp.bigimage.BigImageActivity;
 import cn.com.nggirl.bigimagetestapp.canvas.CanvasActivity;
 import cn.com.nggirl.bigimagetestapp.canvas.CanvasTestActivity;
+import cn.com.nggirl.bigimagetestapp.clipimage.ClipImageActivity;
 import cn.com.nggirl.bigimagetestapp.customer.CounterViewActivity;
 import cn.com.nggirl.bigimagetestapp.customertext.CustomerViewActivity;
 import cn.com.nggirl.bigimagetestapp.mylistview.CustomerListViewActivity;
@@ -68,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CanvasTestActivity.start(MainActivity.this);
+            }
+        });
+
+        Button btClipTest = (Button) findViewById(R.id.bt_skip_clip);
+        btClipTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipImageActivity.start(MainActivity.this);
             }
         });
 

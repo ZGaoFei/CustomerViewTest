@@ -22,6 +22,12 @@
                 android:text="big image page" />
 
             <Button
+                android:id="@+id/bt_skip_clip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clip image page" />
+
+            <Button
                 android:id="@+id/bt_skip_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
