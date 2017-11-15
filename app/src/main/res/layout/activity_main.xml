@@ -57,6 +57,12 @@
                 android:layout_height="wrap_content"
                 android:text="canvas test" />
 
+            <Button
+                android:id="@+id/bt_skip_text_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="text test" />
+
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
