@@ -12,6 +12,7 @@ import cn.com.nggirl.bigimagetestapp.clipimage.ClipImageActivity;
 import cn.com.nggirl.bigimagetestapp.customer.CounterViewActivity;
 import cn.com.nggirl.bigimagetestapp.customertext.CustomerViewActivity;
 import cn.com.nggirl.bigimagetestapp.mylistview.CustomerListViewActivity;
+import cn.com.nggirl.bigimagetestapp.textview.ListViewExpandActivity;
 import cn.com.nggirl.bigimagetestapp.textview.TextActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -86,6 +87,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TextActivity.start(MainActivity.this);
+            }
+        });
+
+        Button btTextTestExpand = (Button) findViewById(R.id.bt_skip_text_expand);
+        btTextTestExpand.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ListViewExpandActivity.start(MainActivity.this);
             }
         });
 

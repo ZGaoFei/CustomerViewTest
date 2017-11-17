@@ -26,7 +26,8 @@
         <activity android:name=".canvas.CanvasActivity" />
         <activity android:name=".canvas.CanvasTestActivity" />
         <activity android:name=".clipimage.ClipImageActivity" />
-        <activity android:name=".textview.TextActivity"></activity>
+        <activity android:name=".textview.TextActivity" />
+        <activity android:name=".textview.ListViewExpandActivity"></activity>
     </application>
 
 </manifest>

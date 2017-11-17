@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,19 +12,65 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:maxLines="3"
         android:ellipsize="end"
-        android:text="你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界"/>
+        android:maxLines="3"
+        android:text="你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界" />
 
     <Button
         android:id="@+id/bt_text_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="展开/折叠"/>
+        android:text="展开/折叠" />
 
     <cn.com.nggirl.bigimagetestapp.textview.ExpandTextView
         android:id="@+id/expand_text_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_default_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="17sp" />
+
+    <cn.com.nggirl.bigimagetestapp.textview.view.ExpandableTextView
+        android:id="@+id/expand_text_view_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandableTextView:animDuration="200"
+        expandableTextView:collapseDrawable="@mipmap/ic_expand_less_black_12dp"
+        expandableTextView:expandDrawable="@mipmap/ic_expand_more_black_12dp"
+        expandableTextView:maxCollapsedLines="4">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@id/expandable_box"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:textColor="#438fea"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </cn.com.nggirl.bigimagetestapp.textview.view.ExpandableTextView>
 
 </LinearLayout>

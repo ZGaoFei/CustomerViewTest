@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <cn.com.nggirl.bigimagetestapp.textview.view.ExpandableTextView
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandableTextView:animDuration="200"
+        expandableTextView:collapseDrawable="@mipmap/ic_expand_less_black_12dp"
+        expandableTextView:expandDrawable="@mipmap/ic_expand_more_black_12dp"
+        expandableTextView:expandText="展开全部"
+        expandableTextView:collapseText="收起"
+        expandableTextView:haveAnim="false"
+        android:layout_marginBottom="10dp"
+        expandableTextView:maxCollapsedLines="2">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@id/expandable_box"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:textColor="#438fea"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </cn.com.nggirl.bigimagetestapp.textview.view.ExpandableTextView>
+
+</LinearLayout>

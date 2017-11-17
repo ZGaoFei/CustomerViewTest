@@ -63,6 +63,12 @@
                 android:layout_height="wrap_content"
                 android:text="text test" />
 
+            <Button
+                android:id="@+id/bt_skip_text_expand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="text test expand" />
+
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
