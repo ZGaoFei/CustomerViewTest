@@ -16,8 +16,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />-->
 
-    <cn.com.nggirl.bigimagetestapp.canvas.viewtest.RulerView
+    <!--<cn.com.nggirl.bigimagetestapp.canvas.viewtest.RulerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" />-->
+
+    <cn.com.nggirl.bigimagetestapp.canvas.CanvasPictureOrTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<cn.com.nggirl.bigimagetestapp.canvas.viewtest.CanvasAnimationView
+        android:id="@+id/canvas_ani_view_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
 
 </LinearLayout>

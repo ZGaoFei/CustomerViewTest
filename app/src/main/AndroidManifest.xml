@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.com.nggirl.bigimagetestapp">
+          package="cn.com.nggirl.bigimagetestapp">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -14,20 +14,22 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".bigimage.BigImageActivity" />
-        <activity android:name=".customer.CounterViewActivity" />
-        <activity android:name=".mylistview.CustomerListViewActivity" />
-        <activity android:name=".customertext.CustomerViewActivity" />
-        <activity android:name=".canvas.CanvasActivity" />
-        <activity android:name=".canvas.CanvasTestActivity" />
-        <activity android:name=".clipimage.ClipImageActivity" />
-        <activity android:name=".textview.TextActivity" />
-        <activity android:name=".textview.ListViewExpandActivity"></activity>
+        <activity android:name=".bigimage.BigImageActivity"/>
+        <activity android:name=".customer.CounterViewActivity"/>
+        <activity android:name=".mylistview.CustomerListViewActivity"/>
+        <activity android:name=".customertext.CustomerViewActivity"/>
+        <activity android:name=".canvas.CanvasActivity"/>
+        <activity android:name=".canvas.CanvasTestActivity"/>
+        <activity android:name=".clipimage.ClipImageActivity"/>
+        <activity android:name=".textview.TextActivity"/>
+        <activity android:name=".textview.ListViewExpandActivity"/>
+        <activity android:name=".path.PathTestActivity">
+        </activity>
     </application>
 
 </manifest>

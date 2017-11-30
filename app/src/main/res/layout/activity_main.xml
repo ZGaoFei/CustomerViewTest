@@ -69,6 +69,17 @@
                 android:layout_height="wrap_content"
                 android:text="text test expand" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000000"/>
+
+            <Button
+                android:id="@+id/bt_skip_path_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="path text" />
+
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>

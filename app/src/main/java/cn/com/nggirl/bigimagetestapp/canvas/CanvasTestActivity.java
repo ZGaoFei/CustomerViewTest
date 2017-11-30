@@ -17,5 +17,12 @@ public class CanvasTestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_canvas_test);
+
+//        initView();
+    }
+
+    private void initView() {
+//        CanvasAnimationView view = (CanvasAnimationView) findViewById(R.id.canvas_ani_view_test);
+//        view.startAni(5000);
     }
 }
