@@ -11,10 +11,12 @@ import cn.com.nggirl.bigimagetestapp.canvas.CanvasTestActivity;
 import cn.com.nggirl.bigimagetestapp.clipimage.ClipImageActivity;
 import cn.com.nggirl.bigimagetestapp.customer.CounterViewActivity;
 import cn.com.nggirl.bigimagetestapp.customertext.CustomerViewActivity;
+import cn.com.nggirl.bigimagetestapp.edittext.EditTextActivity;
 import cn.com.nggirl.bigimagetestapp.mylistview.CustomerListViewActivity;
 import cn.com.nggirl.bigimagetestapp.path.PathTestActivity;
 import cn.com.nggirl.bigimagetestapp.textview.ListViewExpandActivity;
 import cn.com.nggirl.bigimagetestapp.textview.TextActivity;
+import cn.com.nggirl.bigimagetestapp.timepicker.TimePickerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -104,6 +106,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 PathTestActivity.start(MainActivity.this);
+            }
+        });
+        Button editTextTest = (Button) findViewById(R.id.bt_skip_edit_text);
+        editTextTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditTextActivity.start(MainActivity.this);
+            }
+        });
+        Button timePickerTest = (Button) findViewById(R.id.bt_skip_time_picker);
+        timePickerTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimePickerActivity.start(MainActivity.this);
             }
         });
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.com.nggirl.bigimagetestapp.edittext.EditTextActivity">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:hint="请输入价格"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:maxLines="1"
+        android:textColorHint="#ff00aa"
+        android:textSize="12sp"/>
+
+    <cn.com.nggirl.bigimagetestapp.edittext.view.CustomerEditText
+        android:id="@+id/custom_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:inputType="numberDecimal|number"
+        android:maxLength="7"
+        android:maxLines="1"
+        android:textColorHint="#ff00aa"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/button_get_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get text"/>
+
+</LinearLayout>
