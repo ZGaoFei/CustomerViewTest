@@ -13,6 +13,8 @@ import cn.com.nggirl.bigimagetestapp.customer.CounterViewActivity;
 import cn.com.nggirl.bigimagetestapp.customertext.CustomerViewActivity;
 import cn.com.nggirl.bigimagetestapp.edittext.EditTextActivity;
 import cn.com.nggirl.bigimagetestapp.mylistview.CustomerListViewActivity;
+import cn.com.nggirl.bigimagetestapp.path.PathTest2Activity;
+import cn.com.nggirl.bigimagetestapp.path.PathTest3Activity;
 import cn.com.nggirl.bigimagetestapp.path.PathTestActivity;
 import cn.com.nggirl.bigimagetestapp.textview.ListViewExpandActivity;
 import cn.com.nggirl.bigimagetestapp.textview.TextActivity;
@@ -106,6 +108,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 PathTestActivity.start(MainActivity.this);
+            }
+        });
+        Button btTextPath2 = (Button) findViewById(R.id.bt_skip_path2_text);
+        btTextPath2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PathTest2Activity.start(MainActivity.this);
+            }
+        });
+        Button btTextPath3 = (Button) findViewById(R.id.bt_skip_path3_text);
+        btTextPath3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PathTest3Activity.start(MainActivity.this);
             }
         });
         Button editTextTest = (Button) findViewById(R.id.bt_skip_edit_text);

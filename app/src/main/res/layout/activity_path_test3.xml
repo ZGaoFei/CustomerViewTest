@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.com.nggirl.bigimagetestapp.path.PathTest3Activity">
+
+    <RadioGroup
+        android:id="@+id/radio_group3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_button_one3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:checked="true"
+            android:text="control ponit one"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_two3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:text="control ponit two"/>
+
+    </RadioGroup>
+
+    <cn.com.nggirl.bigimagetestapp.path.viewtest.CircleView
+        android:id="@+id/circle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

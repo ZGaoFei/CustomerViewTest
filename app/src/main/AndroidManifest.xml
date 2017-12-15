@@ -28,9 +28,11 @@
         <activity android:name=".clipimage.ClipImageActivity" />
         <activity android:name=".textview.TextActivity" />
         <activity android:name=".textview.ListViewExpandActivity" />
-        <activity android:name=".path.PathTestActivity"></activity>
-        <activity android:name=".edittext.EditTextActivity"></activity>
-        <activity android:name=".timepicker.TimePickerActivity"></activity>
+        <activity android:name=".path.PathTestActivity" />
+        <activity android:name=".edittext.EditTextActivity" />
+        <activity android:name=".timepicker.TimePickerActivity" />
+        <activity android:name=".path.PathTest2Activity" />
+        <activity android:name=".path.PathTest3Activity"></activity>
     </application>
 
 </manifest>

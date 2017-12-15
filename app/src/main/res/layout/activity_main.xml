@@ -81,6 +81,18 @@
                 android:text="path text" />
 
             <Button
+                android:id="@+id/bt_skip_path2_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="path text two" />
+
+            <Button
+                android:id="@+id/bt_skip_path3_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="path text three" />
+
+            <Button
                 android:id="@+id/bt_skip_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
