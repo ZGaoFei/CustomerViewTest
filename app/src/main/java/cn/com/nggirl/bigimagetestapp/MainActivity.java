@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import cn.com.nggirl.bigimagetestapp.animation.AnimationActivity;
 import cn.com.nggirl.bigimagetestapp.bigimage.BigImageActivity;
 import cn.com.nggirl.bigimagetestapp.canvas.CanvasActivity;
 import cn.com.nggirl.bigimagetestapp.canvas.CanvasTestActivity;
@@ -136,6 +138,42 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TimePickerActivity.start(MainActivity.this);
+            }
+        });
+        final Button animationTest = (Button) findViewById(R.id.bt_skip_animation_test);
+        animationTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AnimationActivity.start(MainActivity.this, animationTest);
+            }
+        });
+
+        final ImageView imageView0 = (ImageView) findViewById(R.id.image_view0);
+        imageView0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AnimationActivity.start(MainActivity.this, imageView0, 0);
+            }
+        });
+        final ImageView imageView1 = (ImageView) findViewById(R.id.image_view1);
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AnimationActivity.start(MainActivity.this, imageView1, 1);
+            }
+        });
+        final ImageView imageView2 = (ImageView) findViewById(R.id.image_view2);
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AnimationActivity.start(MainActivity.this, imageView2, 2);
+            }
+        });
+        final ImageView imageView3 = (ImageView) findViewById(R.id.image_view3);
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AnimationActivity.start(MainActivity.this, imageView3, 3);
             }
         });
 

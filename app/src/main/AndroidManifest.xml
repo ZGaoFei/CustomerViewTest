@@ -32,7 +32,8 @@
         <activity android:name=".edittext.EditTextActivity" />
         <activity android:name=".timepicker.TimePickerActivity" />
         <activity android:name=".path.PathTest2Activity" />
-        <activity android:name=".path.PathTest3Activity"></activity>
+        <activity android:name=".path.PathTest3Activity" />
+        <activity android:name=".animation.AnimationActivity"></activity>
     </application>
 
 </manifest>
