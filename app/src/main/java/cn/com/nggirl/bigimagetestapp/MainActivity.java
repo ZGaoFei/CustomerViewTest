@@ -14,6 +14,7 @@ import cn.com.nggirl.bigimagetestapp.clipimage.ClipImageActivity;
 import cn.com.nggirl.bigimagetestapp.customer.CounterViewActivity;
 import cn.com.nggirl.bigimagetestapp.customertext.CustomerViewActivity;
 import cn.com.nggirl.bigimagetestapp.edittext.EditTextActivity;
+import cn.com.nggirl.bigimagetestapp.imageandtext.ImageAndTextActivity;
 import cn.com.nggirl.bigimagetestapp.mylistview.CustomerListViewActivity;
 import cn.com.nggirl.bigimagetestapp.path.PathTest2Activity;
 import cn.com.nggirl.bigimagetestapp.path.PathTest3Activity;
@@ -174,6 +175,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AnimationActivity.start(MainActivity.this, imageView3, 3);
+            }
+        });
+        Button imageAndTextTest = (Button) findViewById(R.id.bt_skip_image_and_text);
+        imageAndTextTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ImageAndTextActivity.start(MainActivity.this);
             }
         });
 

@@ -142,6 +142,12 @@
                 android:layout_height="wrap_content"
                 android:text="animation test" />
 
+            <Button
+                android:id="@+id/bt_skip_image_and_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="image and text test" />
+
 
         </LinearLayout>
 

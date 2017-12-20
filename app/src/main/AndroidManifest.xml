@@ -33,7 +33,8 @@
         <activity android:name=".timepicker.TimePickerActivity" />
         <activity android:name=".path.PathTest2Activity" />
         <activity android:name=".path.PathTest3Activity" />
-        <activity android:name=".animation.AnimationActivity"></activity>
+        <activity android:name=".animation.AnimationActivity" />
+        <activity android:name=".imageandtext.ImageAndTextActivity"></activity>
     </application>
 
 </manifest>
