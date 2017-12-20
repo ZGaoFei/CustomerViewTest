@@ -159,7 +159,7 @@ public class ImageAndTextActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void saveBitmap(Bitmap bitmap, String name) {
-        String path = Environment.getExternalStorageDirectory() + "/dealercloud/";
+        String path = Environment.getExternalStorageDirectory() + "/customertest/";
         File f = new File(path, name);
         if (f.exists()) {
             f.delete();
