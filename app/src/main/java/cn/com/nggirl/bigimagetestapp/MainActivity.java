@@ -16,6 +16,7 @@ import cn.com.nggirl.bigimagetestapp.customertext.CustomerViewActivity;
 import cn.com.nggirl.bigimagetestapp.edittext.EditTextActivity;
 import cn.com.nggirl.bigimagetestapp.imageandtext.ImageAndTextActivity;
 import cn.com.nggirl.bigimagetestapp.mylistview.CustomerListViewActivity;
+import cn.com.nggirl.bigimagetestapp.path.CircleArrowActivity;
 import cn.com.nggirl.bigimagetestapp.path.PathTest2Activity;
 import cn.com.nggirl.bigimagetestapp.path.PathTest3Activity;
 import cn.com.nggirl.bigimagetestapp.path.PathTestActivity;
@@ -182,6 +183,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ImageAndTextActivity.start(MainActivity.this);
+            }
+        });
+        Button circleArrow = (Button) findViewById(R.id.bt_skip_circle_arrow_test);
+        circleArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CircleArrowActivity.start(MainActivity.this);
             }
         });
 
