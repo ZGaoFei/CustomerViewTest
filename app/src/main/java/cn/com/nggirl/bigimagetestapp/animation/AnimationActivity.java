@@ -58,7 +58,7 @@ public class AnimationActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
 
         List<Fragment> list = new ArrayList<>();
-        list.add(ImageViewFragment.newInstance(0));
+        list.add(ViewScaleFragment.newInstance());
         list.add(ImageViewFragment.newInstance(1));
         list.add(ImageViewFragment.newInstance(2));
         list.add(ImageViewFragment.newInstance(3));

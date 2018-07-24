@@ -35,7 +35,8 @@
         <activity android:name=".path.PathTest3Activity" />
         <activity android:name=".animation.AnimationActivity" />
         <activity android:name=".imageandtext.ImageAndTextActivity" />
-        <activity android:name=".path.CircleArrowActivity"></activity>
+        <activity android:name=".path.CircleArrowActivity" />
+        <activity android:name=".matrix.MatrixTestActivity"></activity>
     </application>
 
 </manifest>
