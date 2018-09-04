@@ -154,6 +154,23 @@
                 android:layout_height="wrap_content"
                 android:text="circle arrow test" />
 
+            <Button
+                android:id="@+id/bt_skip_html_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="html test" />
+
+            <Button
+                android:id="@+id/bt_skip_big_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="big image test" />
+
+            <Button
+                android:id="@+id/bt_skip_big_image_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="big image with view pager test" />
 
         </LinearLayout>
 

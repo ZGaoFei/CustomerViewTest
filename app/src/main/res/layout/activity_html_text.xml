@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.com.nggirl.bigimagetestapp.HtmlTextActivity">
+
+    <TextView
+        android:id="@+id/text_html"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="哈哈哈哈哈啊哈哈哈哈哈"
+        android:textSize="16sp" />
+    
+    <ImageView
+        android:id="@+id/image_view_resize"
+        android:layout_width="150dp"
+        android:layout_height="267dp"
+        android:layout_margin="20dp"
+        android:background="#000000"/>
+
+</LinearLayout>

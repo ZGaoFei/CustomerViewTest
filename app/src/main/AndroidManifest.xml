@@ -36,7 +36,10 @@
         <activity android:name=".animation.AnimationActivity" />
         <activity android:name=".imageandtext.ImageAndTextActivity" />
         <activity android:name=".path.CircleArrowActivity" />
-        <activity android:name=".matrix.MatrixTestActivity"></activity>
+        <activity android:name=".matrix.MatrixTestActivity" />
+        <activity android:name=".HtmlTextActivity" />
+        <activity android:name=".superbigimageview.SuperBigImageActivity" />
+        <activity android:name=".superbigimageview.SuperBigImageViewPagerActivity"></activity>
     </application>
 
 </manifest>

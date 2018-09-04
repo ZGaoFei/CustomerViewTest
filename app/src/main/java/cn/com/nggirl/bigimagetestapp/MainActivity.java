@@ -20,6 +20,8 @@ import cn.com.nggirl.bigimagetestapp.path.CircleArrowActivity;
 import cn.com.nggirl.bigimagetestapp.path.PathTest2Activity;
 import cn.com.nggirl.bigimagetestapp.path.PathTest3Activity;
 import cn.com.nggirl.bigimagetestapp.path.PathTestActivity;
+import cn.com.nggirl.bigimagetestapp.superbigimageview.SuperBigImageActivity;
+import cn.com.nggirl.bigimagetestapp.superbigimageview.SuperBigImageViewPagerActivity;
 import cn.com.nggirl.bigimagetestapp.textview.ListViewExpandActivity;
 import cn.com.nggirl.bigimagetestapp.textview.TextActivity;
 import cn.com.nggirl.bigimagetestapp.timepicker.TimePickerActivity;
@@ -190,6 +192,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CircleArrowActivity.start(MainActivity.this);
+            }
+        });
+        Button htmlText = (Button) findViewById(R.id.bt_skip_html_test);
+        htmlText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HtmlTextActivity.start(MainActivity.this);
+            }
+        });
+        Button bigImageTest = (Button) findViewById(R.id.bt_skip_big_image);
+        bigImageTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SuperBigImageActivity.start(MainActivity.this);
+            }
+        });
+        Button bigImageViewPagerTest = (Button) findViewById(R.id.bt_skip_big_image_view_pager);
+        bigImageViewPagerTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SuperBigImageViewPagerActivity.start(MainActivity.this);
             }
         });
 
