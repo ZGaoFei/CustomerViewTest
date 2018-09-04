@@ -18,3 +18,7 @@ Customer view test app, this app is user learn.
 >  自定义ProgressBar
 
 >    双层进度条显示
+
+>  添加大长图显示效果
+
+>    仿微博长图显示，使用 subsampling-scale-image-view 库来实现
