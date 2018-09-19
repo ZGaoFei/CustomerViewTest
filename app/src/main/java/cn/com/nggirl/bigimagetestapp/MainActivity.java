@@ -25,6 +25,8 @@ import cn.com.nggirl.bigimagetestapp.superbigimageview.SuperBigImageViewPagerAct
 import cn.com.nggirl.bigimagetestapp.textview.ListViewExpandActivity;
 import cn.com.nggirl.bigimagetestapp.textview.TextActivity;
 import cn.com.nggirl.bigimagetestapp.timepicker.TimePickerActivity;
+import cn.com.nggirl.bigimagetestapp.viewpager.ViewPagerTestActivity;
+import cn.com.nggirl.bigimagetestapp.viewpager.utltraviewpager.UPVDemoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -213,6 +215,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SuperBigImageViewPagerActivity.start(MainActivity.this);
+            }
+        });
+        Button viewPagerTest = (Button) findViewById(R.id.bt_skip_view_pager);
+        viewPagerTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UPVDemoActivity.start(MainActivity.this);
+            }
+        });
+        Button verticalViewPagerTest = (Button) findViewById(R.id.bt_skip_vertical_view_pager);
+        verticalViewPagerTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ViewPagerTestActivity.start(MainActivity.this);
             }
         });
 

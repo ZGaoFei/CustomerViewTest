@@ -39,7 +39,10 @@
         <activity android:name=".matrix.MatrixTestActivity" />
         <activity android:name=".HtmlTextActivity" />
         <activity android:name=".superbigimageview.SuperBigImageActivity" />
-        <activity android:name=".superbigimageview.SuperBigImageViewPagerActivity"></activity>
+        <activity android:name=".superbigimageview.SuperBigImageViewPagerActivity" />
+        <activity android:name=".viewpager.ViewPagerTestActivity"/>
+        <activity android:name=".viewpager.utltraviewpager.UPVDemoActivity"/>
+        <activity android:name=".viewpager.utltraviewpager.PagerActivity"></activity>
     </application>
 
 </manifest>

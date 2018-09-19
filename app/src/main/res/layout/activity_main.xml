@@ -171,6 +171,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="big image with view pager test" />
+            <Button
+                android:id="@+id/bt_skip_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="view pager test"/>
+            <Button
+                android:id="@+id/bt_skip_vertical_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vertical view pager test"/>
 
         </LinearLayout>
 

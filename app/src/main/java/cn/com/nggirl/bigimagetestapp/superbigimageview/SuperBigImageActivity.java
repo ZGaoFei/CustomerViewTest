@@ -50,8 +50,8 @@ public class SuperBigImageActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                change();
-                change1();
+                change();
+//                change1();
                 i++;
             }
         });
