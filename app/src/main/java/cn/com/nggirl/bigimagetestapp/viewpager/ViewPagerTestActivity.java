@@ -18,7 +18,6 @@ import android.widget.TextView;
 import cn.com.nggirl.bigimagetestapp.R;
 import cn.com.nggirl.bigimagetestapp.viewpager.widget.CopyViewPager;
 import cn.com.nggirl.bigimagetestapp.viewpager.widget.ScaleTransformer;
-import cn.com.nggirl.bigimagetestapp.viewpager.widget.StackTransformer;
 import cn.com.nggirl.bigimagetestapp.viewpager.widget.VerticalViewPager;
 
 public class ViewPagerTestActivity extends AppCompatActivity {
@@ -39,10 +38,9 @@ public class ViewPagerTestActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         copyVerticalViewPager = (CopyViewPager) findViewById(R.id.copy_view_pager);
 
-//        initView();
+        initView();
 //        initView2();
-        initView3();
-
+//        initView3();
     }
 
     private void initView() {
@@ -52,7 +50,7 @@ public class ViewPagerTestActivity extends AppCompatActivity {
         viewPager.setVisibility(View.GONE);
         copyVerticalViewPager.setVisibility(View.GONE);
 
-        verticalViewPager.setPageTransformer(true, new StackTransformer());
+//        verticalViewPager.setPageTransformer(true, new StackTransformer());
     }
 
     /**

@@ -15,6 +15,8 @@ public class VerticalViewPager extends ViewPager {
     public VerticalViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
         setPageTransformer(false, new DefaultTransformer());
+        // 去除滑动到头后的阴影效果
+        // setOverScrollMode(OVER_SCROLL_NEVER);
     }
 
     private MotionEvent swapTouchEvent(MotionEvent event) {
